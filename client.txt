@@ -1,0 +1,10 @@
+Personal access client created successfully.
+Client ID: 1
+Client secret: uZTujhn0wXQn7bUMIagGRcF6XHP2YoFHfZgYUKXv
+Password grant client created successfully.
+Client ID: 2
+Client secret: pfC5Kp65mfzBo3TbxnWP0fUeTEIHHhOXq3l21fi5
+
+Ardaway
+Client ID: 1
+Client secret: 3HcqK8ayqTOppDndv9iOtk2z7PO97rwJ0qE52d0k

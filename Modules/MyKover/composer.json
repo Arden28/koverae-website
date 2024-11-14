@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/mykover",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MyKover\\Providers\\MyKoverServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MyKover\\": ""
+        }
+    }
+}

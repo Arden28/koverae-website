@@ -1,0 +1,14 @@
+Client ID: 1
+Client secret: Kcc7YWJgQ2cr1J2pg1idXBJcr2BcLuUpR8e98OAH
+
+Password grant client created successfully.
+Client ID: 2
+Client secret: E9JKRVY8aER7xQgF2VT5yStEZsJSGXqrFoL7jjkb
+
+Personal access client created successfully
+Client ID: 3
+Client secret: 9QYBpVUzs4MrtCtkj6qyeFWJBmqIbqfaMtDugRbZ
+
+New client created successfully (Vumot)
+Client ID: 4
+Client secret: R3mi0gqljPpp9hoAyy5bzOYnlcPseK4JpesNgu3b
