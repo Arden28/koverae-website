@@ -77,4 +77,8 @@ Route::middleware('auth')->prefix('my-kover')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// OAuth 2.0
+Route::get('auth/k/redirect', [HomeController::class, 'redirectToProvider'])->name('oauth.redirect');
+Route::get('auth/k/callback', [HomeController::class, 'handleProviderCallback'])->name('oauth.callback');
+
 require __DIR__.'/auth.php';

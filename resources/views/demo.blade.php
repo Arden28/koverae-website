@@ -25,7 +25,7 @@
         <div class="bg-cover h-100 min-vh-100" style="background-image: url({{ asset('assets/auth-register-3.png')}}); background-size: cover;">
           <div class="d-flex justify-content-center align-items-center h-100 ">
             <div style="background-color: white; padding: 20px; margin: -20px; border-radius: 10px;">
-              <h3 class="h3 text-center">
+              <h3 class="text-center h3">
                 {{ __("Plus de possibilités avec Koverae") }}
                 <br />
               </h3>

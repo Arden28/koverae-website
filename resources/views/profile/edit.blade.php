@@ -4,26 +4,26 @@
 
 @section('content')
 <x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+    <h2 class="text-xl font-semibold leading-tight text-gray-800">
         {{ __('Profile') }}
     </h2>
 </x-slot>
 
 {{-- <div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-        <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+    <div class="mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
+        <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
             <div class="max-w-xl">
                 @include('profile.partials.update-profile-information-form')
             </div>
         </div>
 
-        <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+        <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
             <div class="max-w-xl">
                 @include('profile.partials.update-password-form')
             </div>
         </div>
 
-        <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+        <div class="p-4 bg-white shadow sm:p-8 sm:rounded-lg">
             <div class="max-w-xl">
                 @include('profile.partials.delete-user-form')
             </div>
@@ -32,10 +32,10 @@
 </div> --}}
 
 
-<div class="container bg-white p-5" style="margin-top: 85px;">
+<div class="container p-5 bg-white" style="margin-top: 85px;">
     <div class="block">
       <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-12 pb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="pb-4 col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
 
             <form id="send-verification" method="post" action="{{ route('verification.send') }}">
                 @csrf
@@ -112,7 +112,7 @@
                 </div>
                 </div>
 
-                <div class="clearfix text-end mb-5">
+                <div class="clearfix mb-5 text-end">
                     <a href="{{ route('kovers.home') }}" class="btn btn-primary font-weight-bold">Ignorer</a>
                     <button type="submit" class="btn btn-primary font-weight-bold" style="background-color: #026469;">Enregistrer</button>
                 </div>

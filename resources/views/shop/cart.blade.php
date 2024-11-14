@@ -55,40 +55,40 @@
 
 @section('content')
     <div id="wrap" style="margin-top: 100px;">
-        <div class="k_website_sale k_website_sale_checkout container py-2">
+        <div class="container py-2 k_website_sale k_website_sale_checkout">
             <div class="row position-relative mb32">
                 <!-- Breadcrumbs -->
                 <div class="col-12 d-none d-lg-block text-muted">
-                    <div class="k_wizard d-flex flex-wrap justify-content-between justify-content-md-start my-5 my-sm-3">
+                    <div class="flex-wrap my-5 k_wizard d-flex justify-content-between justify-content-md-start my-sm-3">
                         <div class="d-flex flex-column flex-md-row justify-content-end align-items-md-start justify-content-center">
-                            <p class="k_wizard_steplabel active text-center mb-0">
+                            <p class="mb-0 text-center k_wizard_steplabel active">
                                 {{ __('Vérifier la commande') }}
                             </p>
-                            <i class="bi bi-chevron-right d-inline-block align-middle"></i>
-                            <p class="k_wizard_steplabel text-center mb-0 disabled">
+                            <i class="align-middle bi bi-chevron-right d-inline-block"></i>
+                            <p class="mb-0 text-center k_wizard_steplabel disabled">
                                 {{ __('Expédition') }}
                             </p>
-                            <i class="bi bi-chevron-right d-inline-block align-middle disabled"></i>
-                            <p class="k_wizard_steplabel text-center mb-0">
+                            <i class="align-middle bi bi-chevron-right d-inline-block disabled"></i>
+                            <p class="mb-0 text-center k_wizard_steplabel">
                                 {{ __('Paiement') }}
                             </p>
                         </div>
                     </div>
                 </div>
                 <!-- Product List -->
-                <div class="k_cart col-12 col-lg-7 text-black">
+                <div class="text-black k_cart col-12 col-lg-7">
                     <div class="col">
                         <h3 class="mb-4">Aperçu de la commande</h3>
                         @if($cart_items->isNotEmpty())
                             @foreach($cart_items as $cart_item)
                             <!-- Product -->
-                            <div class="k_cart_product d-flex align-items-stretch border-bottom pb-4 gap-3">
+                            <div class="gap-3 pb-4 k_cart_product d-flex align-items-stretch border-bottom">
                                 <!-- Product Image -->
                                 <div>
-                                    <img src="{{ asset('assets/images/default/product.png') }}" height="64px" alt="" class="img k_image_64_max rounded">
+                                    <img src="{{ asset('assets/images/default/product.png') }}" height="64px" alt="" class="rounded img k_image_64_max">
                                 </div>
-                                <div class="flex-grow-1 ml-2 mr-2">
-                                    <h6 class="d-inline algn-top h6 font-weight-bold cursor-pointer">
+                                <div class="ml-2 mr-2 flex-grow-1">
+                                    <h6 class="cursor-pointer d-inline algn-top h6 font-weight-bold">
                                         {{ $cart_item->name }}
                                     </h6>
                                     <div>
@@ -116,13 +116,13 @@
                             </div>
                             @endforeach
                             <!-- Product Discount -->
-                            <div class="k_cart_product d-flex align-items-stretch pt-4 gap-3">
+                            <div class="gap-3 pt-4 k_cart_product d-flex align-items-stretch">
                                 <!-- Product Image -->
                                 <div>
-                                    <img src="{{ asset('assets/images/app-icons/discount.png') }}" height="64px" width="64xp" alt="" class="img k_image_64_max rounded">
+                                    <img src="{{ asset('assets/images/app-icons/discount.png') }}" height="64px" width="64xp" alt="" class="rounded img k_image_64_max">
                                 </div>
-                                <div class="flex-grow-1 ml-2 mr-2">
-                                    <h6 class="d-inline algn-top h6 font-weight-bold cursor-pointer">
+                                <div class="ml-2 mr-2 flex-grow-1">
+                                    <h6 class="cursor-pointer d-inline algn-top h6 font-weight-bold">
                                         Plan Spark Remise pour la première année
                                     </h6>
                                     <span class="d-block text-muted" style="font-size: 13px;">
@@ -154,11 +154,11 @@
                 </div>
                 @if($cart_items->isNotEmpty())
                 <!-- Cart Summary -->
-                <div class="k_cart_summary offset-xl-1 col-lg-5 col-xl-4 order-2">
-                    <div class="card-body-lg p-0 p-lg-4 rounded">
+                <div class="order-2 k_cart_summary offset-xl-1 col-lg-5 col-xl-4">
+                    <div class="p-0 rounded card-body-lg p-lg-4">
                         <!-- Cart Subtotal -->
-                        <div class="d-flex align-items-stretch border-bottom pb-2 gap-3">
-                            <div class="flex-grow-1 ml-2 mr-2">
+                        <div class="gap-3 pb-2 d-flex align-items-stretch border-bottom">
+                            <div class="ml-2 mr-2 flex-grow-1">
                                 <span>Sous-total</span>
                             </div>
                             <div class="d-flex flex-column align-items-end">
@@ -166,8 +166,8 @@
                             </div>
                         </div>
                         <!-- Cart Total -->
-                        <div class="d-flex align-items-stretch pt-3 mb-4 gap-3 text-black font-weight-bold">
-                            <div class="flex-grow-1 ml-2 mr-2">
+                        <div class="gap-3 pt-3 mb-4 text-black d-flex align-items-stretch font-weight-bold">
+                            <div class="ml-2 mr-2 flex-grow-1">
                                 <span>Total</span>
                             </div>
                             <div class="d-flex flex-column align-items-end">
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <!-- Coupon Input -->
-                        <div class="input-group mb-1">
+                        <div class="mb-1 input-group">
                             <input type="text" class="form-control" placeholder="Code de réduction" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                             <button class="btn btn-primary font-weight-bold" type="button">Appliquer</button>
@@ -187,9 +187,9 @@
                             VENTES FINALES - Veuillez noter que toutes les ventes d'abonnements Koverae Spark et de services associés sont définitives et non remboursables.
                         </div>
                         <!-- Action Button -->
-                        <div class="d-flex flex-column pt-4">
+                        <div class="pt-4 d-flex flex-column">
                             <a href="{{ route('cart.ship') }}" class="btn go-pay w-100 font-weight-bold">Paiement</a>
-                            <div class="d-flex position-relative w-100 justify-content-center align-items-center my-2 opacity-75">
+                            <div class="my-2 opacity-75 d-flex position-relative w-100 justify-content-center align-items-center">
                                 <span>ou</span>
                             </div>
                             <a href="{{ route('pricing') }}" class="text-center" style="color: #03686d;">{{ __("Changer d'abonnement") }}</a>

@@ -43,5 +43,14 @@ return [
         	'from_phone_number' => env('WHATSAPP_PHONE_NUMBER'),
     	],
 	],
+    // Koverae
+    'koverae' => [
+        'client_id' => env('KOVERAE_CLIENT_ID'),
+        'client_secret' => env('KOVERAE_CLIENT_SECRET'),
+        'redirect_uri' => env('KOVERAE_REDIRECT_URI'),  // URL to Client App's callback route
+        'authorize_url' => env('KOVERAE_AUTHORIZE_URL'), // Provider's /oauth/authorize URL
+        'token_url' => env('KOVERAE_TOKEN_URL'),         // Provider's /oauth/token URL
+        'user_url' => env('KOVERAE_USER_URL'),           // Provider's /api/user URL
+    ],
 
 ];

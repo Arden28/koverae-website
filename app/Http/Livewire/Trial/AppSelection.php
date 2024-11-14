@@ -243,8 +243,8 @@ class AppSelection extends Component
 
     public function render()
     {
-        $currencies = Currency::all();
-        return view('livewire.trial.app-selection', compact('currencies'));
+        // $currencies = Currency::all();
+        return view('livewire.trial.app-selection');
     }
 
 }

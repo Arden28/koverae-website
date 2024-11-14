@@ -206,10 +206,10 @@
 
 @section('content')
 <section id="hero">
-    <div class="k_website_login container flex-grow-1 card shadow">
-        <span class="k_logo mx-auto mt-4" style="background-image: url('{{ asset('assets/images/logo/logo-1.png')}}'); background-size: cover;"></span>
+    <div class="container shadow k_website_login flex-grow-1 card">
+        <span class="mx-auto mt-4 k_logo" style="background-image: url('{{ asset('assets/images/logo/logo-1.png')}}'); background-size: cover;"></span>
         <div class="card-body">
-            <div class="k-alert alert-info text-center">
+            <div class="text-center k-alert alert-info">
                 <p>
                     Accédez à vos instances et gérez-les à partir de ce compte Koverae.
                 </p>
@@ -225,7 +225,7 @@
                     <x-input-error :messages="$errors->get('phone')" class="mt-2" />
                 </div>
 
-                <div class="col-12 py-2 field-password koverae_password_revear">
+                <div class="py-2 col-12 field-password koverae_password_revear">
                     <label for="password" class="fom-label">
                         {{ __('Mot de passe') }}
                     </label>
@@ -236,12 +236,12 @@
                         <i class="bi bi-eye"></i>
                     </button> --}}
                 </div>
-                <div class="konnect-btn mt-3">
+                <div class="mt-3 konnect-btn">
                     <button class="btn float-start col-12">
                         {{ __('ME KONNECTER') }}
                     </button>
                 </div>
-                <div class="k_login_buttons clearfix text-center gap-1 d-grid mb-1 pt-0">
+                <div class="clearfix gap-1 pt-0 mb-1 text-center k_login_buttons d-grid">
 
                     <div class="links-container">
                         <a href="{{ route('register') }}" class="login-link">{{ __("Vous n'êtes pas un Kover ?") }}</a>
@@ -249,6 +249,9 @@
                         <a href="{{ route('password.request') }}" class="reset-link">{{ __('Réinitialiser le mot de passe') }}</a>
                         @endif
                     </div>
+                    <a href="{{ route('oauth.redirect') }}" class="btn btn-primary">
+                        Sign In with Koverae
+                    </a>
                 </div>
             </form>
         </div>
