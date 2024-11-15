@@ -79,17 +79,16 @@
         <div class="row">
             <div class="p-4 col-md-6">
                 <div class="logo d-flex">
-                    <img src="assets/images/logo/logo.png" height="50px" alt="Koverae Logo">
+                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="50px" alt="Koverae Logo">
                 </div>
                 <h1 class="mt-4">Our website is evolving to bring you something extraordinary</h1>
                 <p class="mt-3 fs-5">We'll be launching soon, but in the meantime, explore our exciting new Ndako product, a glimpse of the future awaits!</p>
                 <a href="https://www.ndako.koverae.com?medium=dotcom" class="p-2 btn k-primary fw-bold">Explore Ndako (bêta) – Discover the future</a>
             </div>
             <div class="col-md-6">
-                <img src="assets/images/illustrations/under-development.svg" height="" alt="">
+                <img src="{{ asset('assets/images/illustrations/under-development.svg') }}" height="" alt="">
             </div>
         </div>
     </main>
-    <link rel="stylesheet" href="assets/css/js.css">
 </body>
 </html>
