@@ -6,7 +6,7 @@
     <meta name="author" content="Koverae Ltd">
     <meta name="description" content="Koverae is a dynamic startup focused on developing cutting-edge solutions to help businesses optimize their operations. With a commitment to innovation, Koverae provides tools and platforms designed to drive growth, improve efficiency, and enhance user experience, all while aiming to simplify complex processes for businesses of all sizes." />
     <meta name="keywords" content="ERP, SaaS, Software, All-in-One Business Management, Financial Tracking, Guest and Tenant Portal, Nairobi Business Management, Business Management Tools, Rental Property Software, Tenant and Owner Solutions, Nairobi, Kenya Software, Kenya" />
-    <link rel="shortcut icon" href="assets/images/logo/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.ico') }}">
     <title>Koverae - 🔨🚧🧱</title>
 
     <script type="application/ld+json">{
@@ -86,7 +86,7 @@
                 <a href="https://www.ndako.koverae.com?medium=dotcom" class="p-2 btn k-primary fw-bold">Explore Ndako (bêta) – Discover the future</a>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('assets/images/illustrations/under-development.svg') }}" height="" alt="">
+                <img src="{{ asset('assets/images/illustrations/under-development.svg') }}">
             </div>
         </div>
     </main>
