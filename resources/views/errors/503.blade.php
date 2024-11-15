@@ -74,7 +74,7 @@
         }
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-hidden">
     <main class="under-dev">
         <div class="row">
             <div class="p-4 col-md-6">
