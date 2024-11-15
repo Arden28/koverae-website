@@ -74,7 +74,7 @@
         }
     </style>
 </head>
-<body class="overflow-hidden">
+<body class="overflow-x-hidden">
     <main class="under-dev">
         <div class="row">
             <div class="p-4 col-md-6">
@@ -86,7 +86,7 @@
                 <a href="https://www.ndako.koverae.com?medium=dotcom" class="p-2 btn k-primary fw-bold">Explore Ndako (bêta) – Discover the future</a>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('assets/images/illustrations/under-development.svg') }}">
+                <img src="{{ asset('assets/images/illustrations/under-development.svg') }}" style="object-fit: cover; width: 100%;">
             </div>
         </div>
     </main>
