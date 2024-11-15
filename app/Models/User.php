@@ -184,7 +184,7 @@ class User extends Authenticatable
         imagefill($image, 0, 0, $bg);
 
         // URL to the online font file (Google Fonts example)
-        $fontUrl = 'https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK2YtU5s2kT3cXi-Q_a6sbkM8.woff2';
+        $fontUrl = 'https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900';
 
         // Download font to a temporary location
         $fontPath = public_path('assets/fonts/roboto.woff2');
