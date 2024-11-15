@@ -183,10 +183,16 @@ class User extends Authenticatable
         $text = imagecolorallocate($image, hexdec(substr($textColor, 1, 2)), hexdec(substr($textColor, 3, 2)), hexdec(substr($textColor, 5, 2)));
         imagefill($image, 0, 0, $bg);
 
-        $fontPath = asset('assets/fonts/arial/ARIAL.ttf');
-        if (!file_exists($fontPath)) {
-            die('Font file does not exist: ' . $fontPath);
-        }
+        // URL to the online font file (Google Fonts example)
+        $fontUrl = 'https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK2YtU5s2kT3cXi-Q_a6sbkM8.woff2';
+
+        // Download font to a temporary location
+        $fontPath = public_path('assets/fonts/roboto.woff2');
+        file_put_contents($fontPath, file_get_contents($fontUrl));
+        // $fontPath = public_path('assets/fonts/arial/ARIAL.ttf');
+        // if (!file_exists($fontPath)) {
+        //     die('Font file does not exist: ' . $fontPath);
+        // }
 
         $fontSize = 75;
         $angle = 0;
