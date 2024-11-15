@@ -79,7 +79,7 @@
         <div class="row">
             <div class="p-4 col-md-6">
                 <div class="logo d-flex">
-                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="50px" alt="Koverae Logo">
+                    <img src="{{ asset('assets/images/logo/logo-black.png') }}" height="50px" alt="Koverae Logo">
                 </div>
                 <h1 class="mt-4">Our website is evolving to bring you something extraordinary</h1>
                 <p class="mt-3 fs-5">We'll be launching soon, but in the meantime, explore our exciting new Ndako product, a glimpse of the future awaits!</p>
