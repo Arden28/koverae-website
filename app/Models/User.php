@@ -183,7 +183,7 @@ class User extends Authenticatable
         $text = imagecolorallocate($image, hexdec(substr($textColor, 1, 2)), hexdec(substr($textColor, 3, 2)), hexdec(substr($textColor, 5, 2)));
         imagefill($image, 0, 0, $bg);
 
-        $fontPath = public_path('assets/fonts/arial/ARIAL.ttf');
+        $fontPath = public_path('assets/fonts/arial/arialceb.ttf');
         if (!file_exists($fontPath)) {
             die('Font file does not exist: ' . $fontPath);
         }
